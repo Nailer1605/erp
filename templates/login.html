@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <label for="username">Username</label>
+        {{ form.username(id="username") }}<br>
+        <label for="password">Password</label>
+        {{ form.password(id="password") }}<br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
